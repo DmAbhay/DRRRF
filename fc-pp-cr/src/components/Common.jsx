@@ -16,6 +16,7 @@ import { GithubUserSearch } from "./UseEffect/GithubUserSearch";
 import { HelloEffect } from "./UseEffect/HelloEffect";
 import { UseEffectWithApi } from "./UseEffect/UseEffectWithApi";
 import { AxiosUserFetcher, UserFetcher } from "./UseEffect/UserFetcher";
+import { ReducerCounter } from "./useReducer/ReducerCounter";
 
 
 export default function Common() {
@@ -53,9 +54,15 @@ export default function Common() {
             {/* <GithubUserSearch/> */}
 
 
-            <UserProvider>
+            {/* <UserProvider>
                 <ReactContext/>
                 <UseEffectWithApi/>
+                
+            </UserProvider> */}
+
+
+            <UserProvider>
+                <ReducerCounter/>
             </UserProvider>
 
 

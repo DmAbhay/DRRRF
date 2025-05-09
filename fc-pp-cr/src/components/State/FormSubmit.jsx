@@ -10,12 +10,17 @@ export function MultiInputForm1() {
     alert(`Name: ${name}, Email: ${email}`);
   };
 
+  function handleChange(e){
+    setName(e.targe.value)
+  }
+
   return (
     <form onSubmit={handleSubmit}>
       <input
         placeholder="Enter name"
         value={name}
-        onChange={(e) => setName(e.target.value)}
+        // onChange={(e) => setName(e.target.value)}
+        onChange={handleChange}
       />
       <input
         placeholder="Enter email"
